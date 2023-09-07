@@ -11,7 +11,17 @@ export class TasksComponent {
   text: string = '';
 
   addTask(): void {
-    this.taskList.push(new Task(this.text));
+    if (this.text.trim()) {
+      this.taskList.push(new Task(this.text));
+    }
     this.text = '';
+  }
+
+  deleteTask(index: number): void {
+    this.taskList.splice(index, 1);
+  }
+
+  completeTask(task: Task) {
+    task.state = !task.state;
   }
 }
