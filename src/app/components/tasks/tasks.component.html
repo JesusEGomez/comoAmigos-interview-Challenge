@@ -22,11 +22,15 @@
       [ngClass]="task.state === true ? 'task-Completed' : ''"
       (click)="completeTask(task)"
     >
-      {{ task.text }}
-
-      <button class="deleteButton" type="button" (click)="deleteTask(i)">
+      <button
+        mat-stroked-button
+        class="deleteButton"
+        type="button"
+        (click)="deleteTask(i)"
+      >
         Eliminar
       </button>
+      <span class="text-task">{{ task.text }}</span>
     </mat-list-item>
   </mat-list>
 </div>
