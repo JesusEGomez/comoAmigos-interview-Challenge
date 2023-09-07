@@ -1,20 +1,32 @@
 <div class="tasks-container">
-  <div class="">
-    <input [(ngModel)]="text" type="text" placeholder="Escriba una tarea..." />
-    <button type="button" (click)="addTask()">Agregar</button>
+  <div class="form-container">
+    <input
+      class="inputTask"
+      [(ngModel)]="text"
+      type="text"
+      placeholder="Escriba una tarea..."
+    />
+    <button
+      mat-stroked-button
+      class="addButton"
+      type="button"
+      (click)="addTask()"
+    >
+      Agregar
+    </button>
   </div>
-  <div>
-    <ul>
-      <li
-        *ngFor="let task of taskList; let i = index"
-        [ngClass]="task.state === true ? 'task-Completed' : ''"
-        (click)="completeTask(task)"
-      >
-        <span>
-          {{ task.text }}
-        </span>
-        <button type="button" (click)="deleteTask(i)">Eliminar</button>
-      </li>
-    </ul>
-  </div>
+  <mat-list class="ulTasks">
+    <mat-list-item
+      class="task"
+      *ngFor="let task of taskList; let i = index"
+      [ngClass]="task.state === true ? 'task-Completed' : ''"
+      (click)="completeTask(task)"
+    >
+      {{ task.text }}
+
+      <button class="deleteButton" type="button" (click)="deleteTask(i)">
+        Eliminar
+      </button>
+    </mat-list-item>
+  </mat-list>
 </div>
