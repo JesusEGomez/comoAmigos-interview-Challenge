@@ -1,10 +1,14 @@
 .tasks-container {
+  overflow: auto;
   display: flex;
+  max-width: 500px;
   flex-direction: column;
-  min-width: 500px;
-  background-color: aqua;
-  min-height: 500px;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
 }
 .form-container {
   display: flex;
@@ -26,35 +30,44 @@
 .addButton {
   width: 30%;
   height: 100%;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid white;
 }
-.tasksList {
+.taskList {
   display: flex;
-  justify-content: center;
-
-  /* width: 100%; */
+  flex-direction: column;
+  min-height: 80px;
+  max-width: 80%;
+  align-items: center;
 }
+
 .task {
-  /* text-align: center; */
-  width: 100%;
-  min-height: 65px;
+  display: flex;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
   background-color: #1b1b32;
+  width: 100%;
   margin: 5px 0;
   padding: 8px 15px 8px 20px;
-  display: flex;
-  align-items: center;
   border-radius: 7px;
-  border: 1px solid white;
+  overflow-wrap: anywhere;
+}
+
+.text-task {
+  font-size: 20px;
 }
 .task:hover {
   cursor: pointer;
 }
-.text-task {
-  margin-left: 15px;
-}
+
 .task-Completed {
   background-color: brown;
   text-decoration: line-through;
 }
 
 .deleteButton {
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
 }
