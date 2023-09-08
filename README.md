@@ -1,27 +1,56 @@
-# ComoAmigosInterviewChallenge
+Por supuesto, aquí tienes la versión revisada de la documentación:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+# Documentación de la Aplicación de Tareas
 
-## Development server
+## Introducción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La Aplicación de Tareas es una herramienta simple para gestionar y realizar un seguimiento de las tareas pendientes. Permite a los usuarios agregar nuevas tareas, marcarlas como completadas y eliminar tareas que ya no son necesarias.
 
-## Code scaffolding
+## Funciones Principales
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La aplicación de tareas incluye las siguientes funciones principales:
 
-## Build
+1. **Agregar una Tarea**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   - Descripción: Los usuarios pueden agregar nuevas tareas a la lista.
+   - Pasos:
+     1. El usuario ingresa la descripción de la tarea.
+     2. El usuario presiona el botón "Agregar tarea".
+     3. La tarea se agrega a la lista de tareas pendientes.
 
-## Running unit tests
+2. **Marcar una Tarea como Completada**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   - Descripción: Los usuarios pueden marcar una tarea como completada haciendo clic en ella.
+   - Pasos:
+     1. El usuario hace clic sobre la tarea que desea marcar como completada.
+     2. La tarea se marca como completada.
 
-## Running end-to-end tests
+3. **Eliminar una Tarea**
+   - El usuario selecciona una tarea de la lista de tareas pendientes o completadas.
+   - Pasos:
+     1. El usuario hace clic en el botón "X".
+     2. La tarea se elimina de la lista.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Uso de la Aplicación
 
-## Further help
+A continuación, se describen los pasos básicos para usar la aplicación de tareas:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Instalar Dependencias**
+
+   - Antes de utilizar la aplicación, asegúrate de haber instalado las dependencias necesarias. Ejecuta el siguiente comando en la terminal:
+
+   ```
+   npm install
+   ```
+
+2. **Iniciar la Aplicación**
+
+   - Después de instalar las dependencias, inicia la aplicación con el siguiente comando:
+
+   ```
+   ng serve
+   ```
+
+## Acerca de la Aplicación
+
+La Aplicación de Tareas es responsive, lo que significa que se adapta automáticamente a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles, tabletas y computadoras de escritorio. Ha sido construida utilizando Angular 16, un framework de desarrollo web ampliamente utilizado que facilita la creación de aplicaciones web modernas y dinámicas.
