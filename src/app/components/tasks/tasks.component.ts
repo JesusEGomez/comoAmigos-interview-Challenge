@@ -21,7 +21,7 @@ export class TasksComponent {
     this.taskList.splice(index, 1);
   }
 
-  completeTask(task: Task) {
+  completeTask(task: Task): void {
     task.state = !task.state;
   }
 }

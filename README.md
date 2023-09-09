@@ -54,3 +54,5 @@ A continuación, se describen los pasos básicos para usar la aplicación de tar
 ## Acerca de la Aplicación
 
 La Aplicación de Tareas es responsive, lo que significa que se adapta automáticamente a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles, tabletas y computadoras de escritorio. Ha sido construida utilizando Angular 16, un framework de desarrollo web ampliamente utilizado que facilita la creación de aplicaciones web modernas y dinámicas.
+
+Además, la aplicación realiza una validación para evitar que se agreguen tareas vacías, asegurando que cada tarea tenga una descripción significativa.
